@@ -24,10 +24,6 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--basic-black)
-}
-
-a:visited {
 	color: var(--basic-black);
 }
 
@@ -51,8 +47,15 @@ h1 {
 
 h2 {
 	font-size: 47px;
-	line-height: 48px;
+	line-height: 58px;
 }
+
+h3 {
+	font-size: 47px;
+	line-height: 58px;
+	letter-spacing: 0.2em;
+}
+	
 
 header {
 	background-color: var(--special-yellow);
@@ -92,8 +95,9 @@ header {
 .search-button {
 	font-family: Open Sans;
 	font-size: 15px;
-	line-height: 50px;
+	line-height: 20px;
 	width: 84px;
+	height: 50px;
 	background-color: var(--special-yellow);
 	border: 2px solid var(--basic-black);
 }
@@ -153,6 +157,7 @@ header {
 
 .catalog {
 	margin-right: 10px;
+	letter-spacing: 0.1em;
 }
 
 .catalog:hover {
@@ -164,7 +169,7 @@ header {
 }
 
 .delivery-header {
-	margin-left: 500px;
+	margin-left: 300px;
 }
 
 .delivery-header:hover {
@@ -207,6 +212,7 @@ header {
 .menu-2-header li{
 	list-style: none;
 	display: inline-block;
+	letter-spacing: 0.2em;
 }
 
 .slider-2 {
@@ -229,6 +235,10 @@ header {
 	display: none;
 }
 
+.our-detailes, .write-us {
+	letter-spacing: 0.2em;
+}
+
 .feedback {
 	display: none;
 }
@@ -246,9 +256,13 @@ main p{
 	line-height: 28px;
 }
 
+div.slider p {
+	line-height: 20px;
+}
+
 .curiers li{
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 28px;
 }
 
 ul.curiers{
@@ -302,6 +316,60 @@ ul.curiers{
 	background-position: 0px 7px;
 	opacity: 0.3;
 }
+
+.filter-section {
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.1em;
+}
+
+.filter-option {
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 19px;
+	list-style: none;
+}
+
+.show-button, .cart-button {
+	font-family: Gilroy;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	background-color: var(--basic-white);
+	border: 0;
+	letter-spacing: 0.2em;
+}
+
+.compare-button {
+	font-family: Open Sans;
+	font-size: 13px;
+	line-height: 18px;
+	background-color: var(--basic-white);
+	border: 0;
+	letter-spacing: 0.1em;
+}
+
+.product-description {
+	font-family: Gilroy;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+}
+
+.price {
+	font-family: Open Sans;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+}
+	
+	
+	
+	
+	
+	
+	
 	
 footer {
 	background-color: var(--basic-dark);
@@ -393,6 +461,7 @@ footer {
 .menu-2-footer li{
 	list-style: none;
 	display: inline-block;
+	letter-spacing: 0.2em;
 }
 
 .menu-2-footer a{

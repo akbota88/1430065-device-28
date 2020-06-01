@@ -8,31 +8,30 @@
   </head>
   <body>
   
+  
   <header>
-  <img src="img/logo-device-header.svg" width="163" height="35" alt="Логотип магазина Девайс" class="index logo-up">
-	<div class="menu-1-header">
-	 
+  <img src="img/logo-device-header.svg" width="163" height="35" alt="Логотип магазина Девайс" class="index-logo-header">
+	
+	<div class="menu-1-header"> 
 	  <form action="https://echo.htmlacademy.ru" method="get" >
 	  <img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">
 	  <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">	  
 	  <button type="button" class="search-button">НАЙТИ</button> 
-	  </form>
-	 
-	  
-	  	
+	  </form>  	
 	  <a href="blank.html" class="enter-header">Войти</a>	
 	  <a href="blank.html" class="compare-header">Сравнить</a>	
 	  <a href="blank.html" class="cart-header">Корзина</a>
 	</div>
-	<nav>
-	  <ul class="menu-2-header">
-		<li><a href="catalog.html" class="catalog">КАТАЛОГ ТОВАРОВ</a></li>
-		<li><a href="blank.html"><img src="img/plus.svg" width="15" height="15" alt="Открыть каталог"></a></li>
-		<li><a href="blank.html" class="delivery-header">ДОСТАВКА</a></li>
-		<li><a href="blank.html" class="warranty-header">ГАРАНТИЯ</a></li>
-		<li><a href="blank.html" class="contacts-header">КОНТАКТЫ</a></li>
-	  </ul>
+	
+	<nav class="menu-2-header"> 
+		<a href="catalog.html" class="catalog">КАТАЛОГ ТОВАРОВ</a>
+		<a href="blank.html" class="plus"><img src="img/plus.svg" width="15" height="15" alt="Открыть каталог"></a>
+		<a href="blank.html" class="delivery-header">ДОСТАВКА</a>
+		<a href="blank.html" class="warranty-header">ГАРАНТИЯ</a>
+		<a href="blank.html" class="contacts-header">КОНТАКТЫ</a>
 	</nav> 
+	
+	
 	<div class="catalog-options">
 	  <a href="blank.html">Виртуальная реальность</a>
 	  <a href="blank.html">Моноподы для селфи</a>
@@ -137,10 +136,11 @@
 	<a href="blank.html"><img src="img/logo-2.png" width="260" height="100" alt="Лого SP-GADGETS"></a>
 	<a href="blank.html"><img src="img/logo-3.png" width="260" height="100" alt="Лого GoPro"></a>
 	<a href="blank.html"><img src="img/logo-4.png" width="260" height="100" alt="Лого VIVE"></a>
-		
-	<section>
+	
+    <div class="about-us-and-contacts">	
+	<section class="about-us">
 	  <h3>О нас</h3>
-	  <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+	  <p>Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из нас.</p>
 	  <p>Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими транспортными компаниями:</p>
 		<ul class="curiers">
 			<li>Деловые Линии</li>
@@ -150,12 +150,14 @@
 	  <a href="blank.html" class="our-detailes">ПОДРОБНЕЕ О НАС</a>
 	</section>
 	
-	<section>
+	<section class="contacts">
 	  <h3>Контакты</h3>
 	  <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 	  <a href="blank.html" aria-label="Открыть карту большого масштаба"><img src="img/map.png" width="560" height="222" alt="Карта расположения"></a>
 	  <img src="img/map_popup.png" width="994" height="593" alt="Карта расположения в большом масштабе" class="big-map">
 	  <a href="blank.html" class="write-us">НАПИШИТЕ НАМ</a>
+	</section>
+	</div>
 	
 	  <form action="https://echo.htmlacademy.ru" method="post" class="feedback">
 	  <button type="button" aria-label="Закрыть форму"></button>
@@ -173,29 +175,34 @@
 	  </p>
 	  <button type="submit">ОТПРАВИТЬ</button> 
 	  </form>	
-	</section>
+	
   </main>
   
   <footer>
-   <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
+    
     <div class="menu-1-footer">
 	  <a href="blank.html" class="enter-footer">Войти</a>
 	  <a href="blank.html" class="compare-footer">Сравнить</a>
 	  <a href="blank.html" class="cart-footer">Корзина</a>
 	</div>
-	  
+	<img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина Девайс" class="index-logo-footer">
+	    
+	<div class="menu-2-footer">
 	<span class="address">г. Москва, ул.Строителей, 15</span>
-	
-	<ul class="menu-2-footer">
-		<li><a href="blank.html" class="delivery-footer">ДОСТАВКА</a></li>
-		<li><a href="blank.html" class="warranty-footer">ГАРАНТИЯ</a></li>
-		<li><a href="blank.html" class="contacts-footer">КОНТАКТЫ</a></li>
-	</ul>
+		<a href="blank.html" class="delivery-footer">ДОСТАВКА</a>
+		<a href="blank.html" class="warranty-footer">ГАРАНТИЯ</a>
+		<a href="blank.html" class="contacts-footer">КОНТАКТЫ</a>
 	<span class="phone-number">Тел.:+7(495)495-95-95</span>
-	<a href="blank.html" aria-label="Фейсбук"  class="facebook"><img src="img/icon-facebook.svg" width="32" height="32" alt="Фейсбук"></a>
-	<a href="blank.html" aria-label="Инстаграм"  class="instagram"><img src="img/icon-instagram.svg" width="32" height="32" alt="Инстаграм"></a>
-	<a href="blank.html" aria-label="Твиттер"  class="twitter"><img src="img/icon-twitter.svg" width="32" height="32" alt="Твиттер"></a>
-	<a href="blank.html" aria-label="Логотип HTML Академии" class="academy"><img src="img/logo-html.svg" width="27" height="34" alt="HTML Академия"></a>
+	</div>
+	
+	<div class="partner-links">
+	  <span class="partner-class-blank"></span>
+	  <a href="blank.html" aria-label="Фейсбук"  class="facebook"><img src="img/icon-facebook.svg" width="32" height="32" alt="Фейсбук"></a>
+	  <a href="blank.html" aria-label="Инстаграм"  class="instagram"><img src="img/icon-instagram.svg" width="32" height="32" alt="Инстаграм"></a>
+	  <a href="blank.html" aria-label="Твиттер"  class="twitter"><img src="img/icon-twitter.svg" width="32" height="32" alt="Твиттер"></a>
+	  <a href="blank.html" aria-label="Логотип HTML Академии" class="academy"><img src="img/logo-html.svg" width="27" height="34" alt="HTML Академия"></a>
+	</div>
+	
   </footer> 
  
   </body>

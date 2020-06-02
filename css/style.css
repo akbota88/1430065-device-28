@@ -37,6 +37,11 @@ img {
 	margin-left: 60px;
 }
 
+.noindex-logo-header {
+	margin-top: -20px;
+	margin-left: 60px;
+}
+
 .noindex-logo-header:hover{
 	opacity: 0.6;
 }
@@ -44,11 +49,11 @@ img {
 .noindex-logo-header:focus{
 	opacity: 0.3;
 }
-	
+
 h1 {
 	font-size: 47px;
 	line-height: 58px;
-	margin: 0 auto;
+	
 }
 
 h2 {
@@ -60,6 +65,7 @@ h3 {
 	font-size: 47px;
 	line-height: 58px;
 	letter-spacing: 0.2em;
+	margin-top: 50px;
 }
 	
 header {
@@ -76,10 +82,12 @@ header {
 	font-family: Open Sans;
 	font-size: 15px;
 	line-height: 20px;
+	min-height: 50px;
 	display: flex;
 	margin-left: 60px;
 	margin-right: 60px;
 	align-items: center;
+	
 }
 
 .search-input {
@@ -87,7 +95,7 @@ header {
 	font-size: 15px;
 	line-height: 20px;
 	width: 316px;
-	height: 50px;
+	min-height: 50px;
 	background-color: var(--special-yellow);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
@@ -116,7 +124,7 @@ header {
 
 .enter-header {
 	padding-left: 20px;
-	margin-right: 239px;
+	margin-right: auto;
 	background-image: url(../img/user-header.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;	
@@ -137,6 +145,7 @@ header {
 
 .compare-header {
 	padding-left: 20px;	
+	margin-left: auto;
 	background-image: url(../img/compare-header.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;	
@@ -152,7 +161,7 @@ header {
 
 .cart-header {	
 	padding-left: 20px;
-	margin-left: auto;
+	margin-left: 63px;
 	background-image: url(../img/cart-header.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;	
@@ -282,7 +291,7 @@ div.slider p {
 .about-us-and-contacts {
 	
 	width: 1160px;
-	height: 700px;
+	min-height: 660px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -422,6 +431,11 @@ footer {
 	margin-left: 140px;
 }
 
+.noindex-logo-footer {
+	margin-top: 2px;
+	margin-left: 140px;
+}
+
 
 .noindex-logo-footer:hover{
 	opacity: 0.6;
@@ -447,7 +461,6 @@ footer {
 
 .enter-footer {
 	margin-left: auto;
-	margin-right: 63px;
 	padding-left: 20px;
 	background-image: url(../img/user-footer.svg);
 	background-repeat: no-repeat;
@@ -464,12 +477,12 @@ footer {
 }
 
 .exit-footer {
-	padding-right: 30px;
+	margin-left: 24px;
 	opacity:0.3;
 }
 
 .compare-footer {
-	margin-right: 62px;
+	margin-left: 43px;
 	padding-left: 20px;
 	background-image: url(../img/compare-footer.svg);
 	background-repeat: no-repeat;
@@ -486,6 +499,7 @@ footer {
 }
 
 .cart-footer {
+	margin-left: 42px; 
 	padding-left: 20px;
 	background-image: url(../img/cart-footer.svg);
 	background-repeat: no-repeat;
@@ -501,12 +515,6 @@ footer {
 	opacity: 0.3;	
 }
 
-.address{
-	font-family: Open Sans;
-	font-size: 15px;
-	line-height: 20px;
-}
-
 .menu-2-footer {
 	margin-right: 140px;
 	margin-left: 140px;
@@ -514,6 +522,11 @@ footer {
 	display: flex;
 }
 
+.address{
+	font-family: Open Sans;
+	font-size: 15px;
+	line-height: 20px;
+}
 .menu-2-footer a {
 	color: var(--basic-white);
 	letter-spacing: 0.2em;

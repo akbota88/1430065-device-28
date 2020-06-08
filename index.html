@@ -148,20 +148,23 @@
 		</section>
 	
 		<form action="https://echo.htmlacademy.ru" method="post" class="feedback">
-			<button type="button" aria-label="Закрыть форму"></button>
-			<p>
+			<button type="button" aria-label="Закрыть форму" class="button-close"></button>
+			<div class="feedback-fields">
+			<p class="appointment-item">
 			<label for="your-name">Ваше имя:</label>
 			<input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
 			</p>
-			<p>
-			<label for="your-email">Ваше имя:</label>
+			<p  class="appointment-item">
+			<label for="your-email">Ваш e-mail:</label>
 			<input id="your-email" type="email" name="email" placeholder="email@example.com">
 			</p>
-			<p>
+			<p  class="appointment-item">
 			<label for="your-text">Текст письма:</label>
 			<textarea id="your-text" name="text" placeholder="В свободной форме"></textarea>
 			</p>
-			<button type="submit">ОТПРАВИТЬ</button> 
+			</div>
+			<button type="submit">ОТПРАВИТЬ</button>
+			
 		</form>
 	</div>	
 	

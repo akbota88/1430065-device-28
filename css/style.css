@@ -389,8 +389,65 @@ div.slider p {
 	top: -625px;
 	left: 100px;
 	outline: 1px solid red;
-	background: var(--basic-white);
+	background-color: var(--basic-white);
 }
+
+.button-close {
+	width: 55px;
+	height: 55px;
+	margin-top: 20px;
+	margin-left: 885px;
+	padding: 0;
+	background-image: url(../img/button-close.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	
+	background-color: var(--basic-white);
+	border: 0;
+	opacity: 0.5;
+	outline: none;
+}
+
+.button-close:hover {
+	opacity: 1;
+}
+
+.button-close:active {
+	opacity: 0.3;
+}
+
+.feedback-fields {
+	margin-top: 17px;
+	margin-left: 100px;
+	margin-right: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+.appointment-item {
+	width: 360px;
+	outline: 1px solid blue;
+}
+
+.appointment-item input {
+	width: 360px;
+	height: 50px;
+	
+}
+
+.appointment-item textarea {
+	width: 760px;
+	height: 165px;
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 19px;
+}
+	
+
+    
+	
 
 
 

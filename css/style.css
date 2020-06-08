@@ -329,14 +329,82 @@ header {
 	display: none;
 }
 
-.big-map {
-	display: none;
-}
-
-.our-detailes, .write-us {
+.write-us {
+	margin-left: 40px;
+	position: relative;
 	letter-spacing: 0.2em;
+	z-index: 0;
 }
 
+.write-us::before {
+	content:"";
+	position: absolute;
+	width: 260px;
+	height: 8px;
+	top: 7px;
+	left: -40px;
+	background-color: var(--special-yellow-dark);
+	z-index: -1;
+}
+
+.contacts {
+	position: relative;
+	margin-left: auto;
+	width: 560px;
+	z-index:0;
+}
+
+.big-map {
+	position: absolute;
+	top: 30px;
+	left: -516px;
+	z-index: 1;
+}
+
+.button-close-big-map {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	margin-top: 0;
+	margin-right: 0;
+	top: 0;
+	right: 0;
+	padding: 0;
+	background-image: url(../img/button-close.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-color: var(--basic-white);
+	border: 0;
+	opacity: 0.5;
+	outline: none;
+}
+
+.button-close-big-map:hover {
+	opacity: 1;
+}
+
+.button-close-big-map:active {
+	opacity: 0.3;
+}
+
+.our-detailes {
+	margin-left: 24px;
+	position: relative;
+	letter-spacing: 0.2em;
+	z-index: 0;
+}
+
+.our-detailes::before {
+	content:"";
+	position: absolute;
+	width: 260px;
+	height: 8px;
+	top: 7px;
+	left: -24px;
+	background-color: var(--special-yellow-dark);
+	z-index: -1;
+}
+	
 main {
 	background-color: var(--basic-white);
 	width: 1160px;
@@ -379,11 +447,6 @@ div.slider p {
 	margin-bottom: 40px;
 }
 
-.contacts {
-	margin-left: auto;
-	width: 560px;
-}
-
 .feedback {
 	position: absolute;
 	display: block;
@@ -391,7 +454,6 @@ div.slider p {
 	min-height: 550px;
 	top: -625px;
 	left: 100px;
-	outline: 1px solid red;
 	background-color: var(--basic-white);
 	box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
@@ -428,9 +490,10 @@ div.slider p {
 	justify-content: space-between;
 }
 
-.appointment-item {
+.feedback-fields .appointment-item {
+	margin-top: 0px;
+	margin-bottom: 32px;
 	width: 360px;
-	outline: 1px solid blue;
 }
 
 .appointment-item input {
@@ -479,18 +542,36 @@ div.slider p {
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 800;	
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .appointment-item textarea {
-	width: 760px;
-	height: 165px;
+	width: 738px;
+	height: 167px;
 	padding-left: 20px;
 	padding-top: 15px;
 	font-family: Open Sans;
 	font-size: 14px;
 	line-height: 19px;
 	border: 0;
+	outline: none;
 	background-color: var(--special-form-background);
+	resize: none;
+}
+
+.appointment-item textarea:hover {
+	background-color: var(--special-form-background-hover);
+}
+
+.appointment-item textarea:focus {
+	background-color: var(--basic-white);
+	border: 2px solid var(--special-yellow);
+	padding-top: 13px;
+	width: 736px;
+	height: 163px;
+	padding-left: 18px;
 }
 
 .appointment-item textarea::-webkit-input-placeholder {
@@ -501,16 +582,51 @@ div.slider p {
 	color: rgba(0, 0, 0, 0.4);
 }
 
-	
+.button-send-form {
+	position: relative;
+	width: 200px;
+	height: 22px;
+	margin-top: 22px;
+	margin-left: 100px;
+	margin-bottom: 76px;
+	font-family: Gilroy;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	border: 0;
+	background-color: var(--basic-white);
+	z-index: 0;
+	outline: none;
+}
 
-    
-	
+.button-send-form::before {
+	content: "";
+	position: absolute;
+	width: 200px;
+    height: 8px;
+	left: 0px;
+	top: 8px;
+	z-index: -1;
+    background: var(--special-yellow);
+}
 
+.button-send-form:hover::before,
+.button-send-form:active::before {
+	content: "";
+	position: absolute;
+	width: 200px;
+    height: 40px;
+	left: 0px;
+	top: -9px;
+	z-index: -1;
+    background: var(--special-yellow);
+}
 
+.button-send-form:active {
+	color: var(--special-black-opacitive03);
+}
 
-
-	
-	
 .curiers{
 	font-size: 16px;
 	line-height: 28px;
@@ -523,12 +639,21 @@ ul.curiers{
 	list-style-type: none;
 }
 
-.circle {
+.curiers li {
+	position: relative;
+	padding-left: 32px;
+}
+
+.curiers li::before {
+	content: "";
+	position: absolute;
 	width: 4px; 
     height: 4px;
     background: var(--basic-white);
 	border-radius: 50%;
 	border: 2px solid var(--basic-grey-light);
+	left: 0;
+	top: 10px;
 }
 
 .write-us {

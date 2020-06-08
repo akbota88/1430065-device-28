@@ -11,6 +11,9 @@
 	--special-white-opacitive03: rgba(255, 255, 255, 0.3);
 	--special-black-opacitive03: rgba(0, 0, 0, 0.3);
 	--special-black-opacitive06: rgba(0, 0, 0, 0.6);
+	--special-form-background: #f2f2f2;
+	--special-form-background-hover: #eaeaea;
+	--special-form-background-incorrect: #f6dada;
 }
 
 body {
@@ -390,6 +393,7 @@ div.slider p {
 	left: 100px;
 	outline: 1px solid red;
 	background-color: var(--basic-white);
+	box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 .button-close {
@@ -401,7 +405,6 @@ div.slider p {
 	background-image: url(../img/button-close.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	
 	background-color: var(--basic-white);
 	border: 0;
 	opacity: 0.5;
@@ -423,7 +426,6 @@ div.slider p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
 }
 
 .appointment-item {
@@ -432,18 +434,73 @@ div.slider p {
 }
 
 .appointment-item input {
-	width: 360px;
+	width: 340px;
 	height: 50px;
-	
+	padding-left: 20px;
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 19px;
+	border: 0;
+	outline: none;
+	background-color: var(--special-form-background);
+}
+
+.appointment-item input:hover {
+	background-color: var(--special-form-background-hover);
+}
+
+.appointment-item input:focus {
+	background-color: var(--basic-white);
+	border: 2px solid var(--special-yellow);
+	width: 336px;
+	height: 46px;
+	padding-left: 18px;
+}
+
+.appointment-item input:invalid {
+	width: 340px;
+	height: 50px;
+	padding-left: 20px;
+	border: 0;
+	outline: none;
+	background-color: var(--special-form-background-incorrect);
+}
+
+.appointment-item input::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.appointment-item input::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.appointment-item label {
+	font-family: Gilroy;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 800;	
 }
 
 .appointment-item textarea {
 	width: 760px;
 	height: 165px;
+	padding-left: 20px;
+	padding-top: 15px;
 	font-family: Open Sans;
 	font-size: 14px;
 	line-height: 19px;
+	border: 0;
+	background-color: var(--special-form-background);
 }
+
+.appointment-item textarea::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.appointment-item textarea::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
 	
 
     
@@ -539,9 +596,6 @@ ul.curiers{
 	display: flex;
 	width: 1300px;
 	margin-left: -140px;
-
-	
-	
 }
 
 .filters-all {

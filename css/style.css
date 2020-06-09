@@ -9,6 +9,7 @@
 	--special-green: #91c92f;
 	--special-yellow-dark: #f0C52e;
 	--special-white-opacitive03: rgba(255, 255, 255, 0.3);
+	--special-black-opacitive01: rgba(0, 0, 0, 0.1);
 	--special-black-opacitive03: rgba(0, 0, 0, 0.3);
 	--special-black-opacitive06: rgba(0, 0, 0, 0.6);
 	--special-form-background: #f2f2f2;
@@ -367,13 +368,13 @@ header {
 	height: 55px;
 	margin-top: 0;
 	margin-right: 0;
-	top: 0;
-	right: 0;
+	top: 42px;
+	right: 48px;
 	padding: 0;
 	background-image: url(../img/button-close.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	background-color: var(--basic-white);
+	background-color: none;
 	border: 0;
 	opacity: 0.5;
 	outline: none;
@@ -670,51 +671,48 @@ ul.curiers{
 .catalog-paths {
 	margin-left: 60px;
 	margin-top: 30px;
+	padding-left: 0;
 	margin-bottom: 50px;
 	font-family: Open Sans;
 	font-size: 14px;
 	line-height: 19px;
 	display: flex;
-	list-style-type: none;	
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	list-style-type: none;
 }
 
-.main-catalog {
-	padding-right: 30px;
-	opacity: 0.3;
+.catalog-paths li {
+	position: relative;
+	margin-right: 40px;
 }
 
-.main-catalog:hover {
-	opacity: 0.6;
+.catalog-paths li,  
+.catalog-paths li a {
+	color: var(--special-black-opacitive03);
 }
 
-.main-catalog:focus {
-	opacity: 0.1;
+.catalog-paths li a:hover{
+	color: var(--special-black-opacitive06);
 }
 
-.items-catalog {
-	padding-left: 30px;
-	padding-right: 30px;
-	background-image: url(../img/nav-arrow.svg);
-	background-repeat: no-repeat;
-	background-position: 0px 7px;
-	opacity: 0.3;
+.catalog-paths li a:active {
+	color: var(--special-black-opacitive01);
 }
 
-.items-catalog:hover {
-	opacity: 0.6;
+.catalog-paths li::after {
+	content: url(../img/nav-arrow.svg);
+	position: absolute;
+	right: -22px;
+	top: -1px;
 }
 
-.items-catalog:focus {
-	opacity: 0.1;
+.catalog-paths li:last-child {
+	margin-right: 0;
 }
 
-.selfie-monopods {
-	padding-left: 30px;
-	padding-right: 30px;
-	background-image: url(../img/nav-arrow.svg);
-	background-repeat: no-repeat;
-	background-position: 0px 7px;
-	opacity: 0.3;
+.catalog-paths li:last-child::after {
+	display: none;
 }
 
 .filter-and-items {
@@ -944,13 +942,16 @@ footer {
 	margin-right: 140px;
 	margin-left: 140px;
 	margin-top: 67px;
-	min-height: 34px;
+	height: 34px;
 	display: flex;
+	align-items: center;
 }
 
-.partner-class-blank {
+.rectangle-yellow {
 	margin-right: auto;
-	flex-basis: 80px;
+	width: 80px;
+    height: 7px;
+    background: var(--special-yellow-dark);
 }
 
 .facebook {
@@ -1003,15 +1004,6 @@ footer {
 	opacity: 0.3;
 }
 	
-	
-
-
-
-
-
-
-
-	
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -1050,12 +1042,4 @@ input[type="radio"].visually-hidden {
 	  url('gilroy-800-normal.woff') format('woff');
     font-weight: 800;
     font-style: normal;
-}
-
-.highlight-red {
-	outline: 1px solid red;
-}
-
-.highlight-blue {
-	outline: 1px solid blue;
 }

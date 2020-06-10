@@ -963,6 +963,23 @@ ul.curiers{
 	grid-template-columns: 360px 360px;
 }
 
+.catalog-item-info {
+	position: relative;
+	outline: 1px solid red;
+	z-index: 0;
+}
+
+.catalog-item-info img{
+	position: relative;
+	z-index: 1;	
+}
+
+.catalog-item-info:hover img{
+	position: relative;
+	opacity: 0.7;
+	z-index: -2;
+}
+
 .cart-button {
 	font-family: Gilroy;
 	font-weight: 800;
@@ -971,7 +988,47 @@ ul.curiers{
 	background-color: var(--basic-white);
 	border: 0;
 	letter-spacing: 0.2em;
+	background: none;
+	position: absolute;
+	top: 180px;
+	left: 117px;
+	z-index: 0;
 }
+
+.cart-button:hover {
+	z-index: 2;
+}
+
+.cart-button::before {
+	content: "";
+	position: absolute;
+	width: 200px;
+    height: 8px;
+	left: -37px;
+	top: 7px;
+	z-index: -1;
+    background: var(--special-yellow);
+}
+
+.cart-button:hover::before,
+.cart-button:active::before {
+	content: "";
+	position: absolute;
+	width: 200px;
+    height: 40px;
+	left: -37px;
+	top: -9px;
+	z-index: -1;
+    background: var(--special-yellow);
+}
+
+.cart-button:active {
+	color: var(--special-black-opacitive03);
+}
+
+
+
+
 
 .compare-button {
 	font-family: Open Sans;
@@ -980,6 +1037,20 @@ ul.curiers{
 	background-color: var(--basic-white);
 	border: 0;
 	letter-spacing: 0.1em;
+	background: none;
+	position: absolute;
+	top: 224px;
+	left: 97px;
+	z-index: 0;
+	opacity: 0.5;
+}
+
+.compare-button:hover {
+	opacity: 1;
+}
+
+.compare-button:active {
+	opacity: 0.2;
 }
 
 .product-description {

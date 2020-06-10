@@ -10,6 +10,8 @@
 	--special-yellow-dark: #f0C52e;
 	--special-white-opacitive03: rgba(255, 255, 255, 0.3);
 	--special-black-opacitive01: rgba(0, 0, 0, 0.1);
+	--special-black-opacitive015: rgba(0, 0, 0, 0.15);
+	--special-black-opacitive04: rgba(0, 0, 0, 0.4);
 	--special-black-opacitive03: rgba(0, 0, 0, 0.3);
 	--special-black-opacitive06: rgba(0, 0, 0, 0.6);
 	--special-form-background: #f2f2f2;
@@ -464,7 +466,7 @@ div.slider p {
 	top: -625px;
 	left: 100px;
 	background-color: var(--basic-white);
-	box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 10px 16px var(--special-black-opacitive015);
 }
 
 .button-close {
@@ -539,11 +541,11 @@ div.slider p {
 }
 
 .appointment-item input::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, 0.4);
+	color: var(--special-black-opacitive04);
 }
 
 .appointment-item input::-moz-placeholder {
-	color: rgba(0, 0, 0, 0.4);
+	color: var(--special-black-opacitive04);
 }
 
 .appointment-item label {
@@ -584,11 +586,11 @@ div.slider p {
 }
 
 .appointment-item textarea::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, 0.4);
+	color: var(--special-black-opacitive04);
 }
 
 .appointment-item textarea::-moz-placeholder {
-	color: rgba(0, 0, 0, 0.4);
+	color: var(--special-black-opacitive04);
 }
 
 .button-send-form {
@@ -945,27 +947,17 @@ ul.curiers{
 	color: var(--special-black-opacitive03);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .items-slider {
 	display: grid;
 	column-gap: 40px;
+	row-gap: 40px;
 	margin-left: 72px; 
+	margin-top: 70px;
 	grid-template-columns: 360px 360px;
 }
 
 .catalog-item-info {
 	position: relative;
-	outline: 1px solid red;
 	z-index: 0;
 }
 
@@ -1026,10 +1018,6 @@ ul.curiers{
 	color: var(--special-black-opacitive03);
 }
 
-
-
-
-
 .compare-button {
 	font-family: Open Sans;
 	font-size: 13px;
@@ -1043,6 +1031,7 @@ ul.curiers{
 	left: 97px;
 	z-index: 0;
 	opacity: 0.5;
+	outline: none;
 }
 
 .compare-button:hover {
@@ -1061,7 +1050,22 @@ ul.curiers{
 	letter-spacing: 0.05em;
 }
 
+
+.item-price-description {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.product-description {
+	width: 276px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 .price {
+	padding-top: 2px;
 	font-family: Open Sans;
 	font-size: 16px;
 	line-height: 18px;

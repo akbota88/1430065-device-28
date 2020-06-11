@@ -7,7 +7,7 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body> 
-	<header>
+	<header  class="header-main">
 		<img src="img/logo-device-header.svg" width="163" height="35" alt="Логотип магазина Девайс" class="index-logo-header">
 		
 		<div class="menu-1-header"> 
@@ -22,11 +22,24 @@
 	
 		<nav class="menu-2-header"> 
 			<a href="catalog.html" class="catalog">КАТАЛОГ ТОВАРОВ</a>
-			<a href="blank.html" class="plus"><img src="img/plus.svg" width="15" height="15" alt="Открыть каталог"></a>
 			<a href="blank.html" class="delivery-header">ДОСТАВКА</a>
 			<a href="blank.html" class="warranty-header">ГАРАНТИЯ</a>
 			<a href="blank.html" class="contacts-header">КОНТАКТЫ</a>
-		</nav> 	
+			<div class="catalog-options">
+				<ul>
+					<li><a href="blank.html">Виртуальная реальность</a></li>
+					<li><a href="catalog.html">Моноподы для селфи</a></li>
+					<li><a href="blank.html">Экшн-камеры</a></li>
+				</ul>
+				<ul>
+					<li><a href="blank.html">Фитнес-браслеты</a></li>
+					<li><a href="blank.html">Умные часы</a></li>
+				</ul>
+				<ul>
+				<li><a href="blank.html">Квадрокоптер</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
   
 	<main>
@@ -156,15 +169,15 @@
 			<div class="feedback-fields">
 				<p class="appointment-item">
 					<label for="your-name">Ваше имя:</label>
-					<input id="your-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*">
+					<input id="your-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[А-Яа-я]*?\s[А-Яа-я]*" required>
 				</p>
 				<p class="appointment-item">
 					<label for="your-email">Ваш e-mail:</label>
-					<input id="your-email" type="email" name="email" placeholder="email@example.com">
+					<input id="your-email" type="email" name="email" placeholder="email@example.com" required>
 				</p>
 				<p class="appointment-item text">
 					<label for="your-text">Текст письма:</label>
-					<textarea id="your-text" name="text" placeholder="В свободной форме"></textarea>
+					<textarea id="your-text" name="text" placeholder="В свободной форме" required></textarea>
 				</p>
 			</div>
 			<button type="submit" class="button-send-form">ОТПРАВИТЬ</button>	

@@ -81,11 +81,15 @@ h3 {
 header {
 	background-color: var(--special-yellow);
 	width: 1160px;
-	min-height:300px;
+	min-height:185px;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	border-top: 1px solid var(--basic-white);
+}
+
+.header-main {
+	min-height: 300px;
 }
 
 .menu-1-header {
@@ -235,6 +239,7 @@ header {
 	min-height: 22px;
 	letter-spacing: 0.2em;
 	display: flex;
+	flex-wrap: wrap;
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 50px;
@@ -242,20 +247,20 @@ header {
 }
 
 .catalog {
-	margin-right: 19px;
+	padding-right: 38px;
+	margin-right: 307px;
 	letter-spacing: 0.1em;
+	background-image: url(../img/plus.svg);
+	background-repeat: no-repeat;
+	background-position: 214px 3px;
 }
 
 .catalog:hover {
-	opacity: 0.6;	
+	color: var(--special-black-opacitive06);	
 }
 
 .catalog:active {
-	opacity: 0.3;	
-}
-
-.plus {
-	margin-right: 314px;
+	color: var(--special-black-opacitive03);	
 }
 
 .delivery-header {
@@ -284,7 +289,9 @@ header {
 }
 
 .contacts-header {
+	display: block;
 	margin-left: auto;
+	margin-right: -4px;
 }
 
 .contacts-header:hover {
@@ -299,10 +306,27 @@ header {
 	font-family: Open Sans;
 	font-size: 15px;
 	line-height: 20px;
-	display: flex;
-	margin-left: 60px;
-	margin-top: 30px;
+	display: none;
+	flex-wrap: wrap;
+	padding-top: 30px;
 	list-style: none;
+	letter-spacing: 0;
+}
+
+.catalog-options .active {
+	opacity: 0.3;
+}
+
+.catalog:hover ~ .catalog-options {
+	display: flex;
+}
+
+.catalog-options:hover {
+	display: flex;
+}
+
+.catalog:active ~ .catalog-options {
+	display: flex;
 }
 
 .catalog-options ul {
@@ -531,7 +555,7 @@ div.slider p {
 	padding-left: 18px;
 }
 
-.appointment-item input:invalid {
+.appointment-item input:focus:invalid {
 	width: 340px;
 	height: 50px;
 	padding-left: 20px;
@@ -559,14 +583,14 @@ div.slider p {
 }
 
 .appointment-item textarea {
-	width: 738px;
-	height: 167px;
+	width: 736px;
+	height: 148px;
 	padding-left: 20px;
 	padding-top: 15px;
 	font-family: Open Sans;
 	font-size: 14px;
 	line-height: 19px;
-	border: 0;
+	border: 2px solid var(--special-form-background);
 	outline: none;
 	background-color: var(--special-form-background);
 	resize: none;
@@ -574,15 +598,17 @@ div.slider p {
 
 .appointment-item textarea:hover {
 	background-color: var(--special-form-background-hover);
+	border: 2px solid var(--special-form-background-hover);
 }
 
 .appointment-item textarea:focus {
 	background-color: var(--basic-white);
 	border: 2px solid var(--special-yellow);
-	padding-top: 13px;
-	width: 736px;
-	height: 163px;
-	padding-left: 18px;
+}
+
+.appointment-item textarea:focus:invalid {
+	background-color: var(--special-form-background-incorrect);
+	border: 2px solid var(--special-form-background-incorrect);	
 }
 
 .appointment-item textarea::-webkit-input-placeholder {

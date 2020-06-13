@@ -4,10 +4,11 @@
 	--basic-white: #ffffff;
 	--basic-grey: #464646;
 	--basic-half-grey: #7e7e7e;
+	--basic-grey-half-light: #ebebeb;
 	--basic-grey-light: #e5e5e5;
 	--special-yellow: #f7e296;
-	--special-green: #91c92f;
 	--special-yellow-dark: #f0C52e;
+	--special-green: #91c92f;
 	--special-white-opacitive03: rgba(255, 255, 255, 0.3);
 	--special-black-opacitive01: rgba(0, 0, 0, 0.1);
 	--special-black-opacitive015: rgba(0, 0, 0, 0.15);
@@ -17,6 +18,8 @@
 	--special-form-background: #f2f2f2;
 	--special-form-background-hover: #eaeaea;
 	--special-form-background-incorrect: #f6dada;
+	--catalog-options-normal: rgba(54, 54, 54, 1);
+	--catalog-options-opacitive: rgba(54, 54, 54, 0.3);
 }
 
 body {
@@ -240,6 +243,7 @@ header {
 	letter-spacing: 0.2em;
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 50px;
@@ -302,7 +306,7 @@ header {
 	opacity: 0.3;	
 }
 
-.catalog-options {
+.catalog-options-popup {
 	font-family: Open Sans;
 	font-size: 15px;
 	line-height: 20px;
@@ -313,55 +317,195 @@ header {
 	letter-spacing: 0;
 }
 
-.catalog-options .active {
+.catalog-options-popup .active {
 	opacity: 0.3;
 }
 
-.catalog:hover ~ .catalog-options {
+.catalog:hover ~ .catalog-options-popup {
 	display: flex;
 }
 
-.catalog-options:hover {
+.catalog-options-popup:hover {
 	display: flex;
 }
 
-.catalog:active ~ .catalog-options {
+.catalog:active ~ .catalog-options-popup {
 	display: flex;
 }
 
-.catalog-options ul {
+.catalog-options-popup ul {
 	padding-left: 0;
 	padding-right: 60px;
 	margin: 0;
 }
 
-.catalog-options li {
+.catalog-options-popup li {
 	margin-bottom: 20px;
 	list-style: none;
 }
 
-.catalog-options a:hover {
+.catalog-options-popup a:hover {
 	opacity: 0.6;
 }
 
-.catalog-options a:active {
+.catalog-options-popup a:active {
 	opacity: 0.3;
+}
+
+.rectangle-white {
+	position:absolute;
+	width: 100px;
+    height: 7px;
+    background: var(--basic-white);
+	top: 90px;
+	left: 540px;
+}
+
+.slide-details {
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	z-index: 0;
+}
+
+.slider h2{
+	margin-bottom: 30px;
+}	
+
+.slide-details::before {
+	content:"";
+	position: absolute;
+	width: 220px;
+	height: 8px;
+	top: 7px;
+	left: -44px;
+	background-color: var(--special-yellow-dark);
+	z-index: -1;
+}
+
+.slide-item-description p{
+	font-family: Gilroy;
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
+
+.slide-item-description span{
+	font-family: Gilroy;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
+
+.slide-number {
+	font-size: 179px;
+	line-height: 219px;
+	color: var(--basic-white);
+	background: lightgrey;
 }
 	
 .slider-2 {
-	display: none;
+	display: block;
 }
 
 .slider-3 {
-	display: none;
+	display: block;
+}
+
+.catalog-options-index p{
+	font-family: Gilroy;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+}
+
+.catalog-options-index svg{
+	background-color: var(--special-yellow);
+	fill: var(--catalog-options-normal);
+}
+
+.catalog-options-index a:hover svg{
+	background-color: var(--special-yellow-dark);
+}
+
+.catalog-options-index a:active svg{
+	fill: var(--catalog-options-opacitive);
+	color: var(--special-black-opacitive03);
+}
+
+.catalog-options-index a:active{
+	color: var(--special-black-opacitive03);
+}
+
+.catalog-options-index a:nth-child(1) svg{
+	padding-top: 52px;
+	padding-bottom: 53px;
+	padding-left: 31px;
+	padding-right: 32px;
+}
+
+.catalog-options-index a:nth-child(2) svg{
+	padding-top: 26px;
+	padding-bottom: 17px;
+	padding-left: 37px;
+	padding-right: 37px;
+}
+
+.catalog-options-index a:nth-child(3) svg{
+	padding-top: 36px;
+	padding-bottom: 37px;
+	padding-left: 44px;
+	padding-right: 45px;
+}
+
+.catalog-options-index a:nth-child(4) svg{
+	padding-top: 48px;
+	padding-bottom: 47px;
+	padding-left: 27px;
+	padding-right: 26px;
+}
+
+.catalog-options-index a:nth-child(5) svg{
+	padding-top: 31px;
+	padding-bottom: 31px;
+	padding-left: 52px;
+	padding-right: 52px;
+}
+
+.catalog-options-index a:nth-child(6) svg{
+	padding-top: 46px;
+	padding-bottom: 45px;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.conditions ul{
+	list-style-type: none;
+}
+
+.conditions li {
+	letter-spacing: 0.2em;
+}
+
+.conditions h3 {
+	margin-top: 86px;
+	margin-bottom: 40px;
+}
+
+.conditions p {
+	letter-spacing: 0.1em;
 }
 
 .warranty-popup {
-	display: none;
+	display: block;
 }
 
 .credit-popup {
-	display: none;
+	display: block;
 }
 
 .write-us {
@@ -451,10 +595,6 @@ main p{
 	font-family: Open Sans;
 	font-size: 15px;
 	line-height: 28px;
-}
-
-div.slider p {
-	line-height: 20px;
 }
 
 .about-us-and-contacts {
@@ -751,6 +891,41 @@ ul.curiers{
 	display: none;
 }
 
+.filter-and-sorting-bar p{
+	font-family: Gilroy;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+}
+
+.filter-and-sorting-bar ul{
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 19px;
+	list-style-type: none;
+}
+
+.filter-and-sorting-bar li{
+	display: inline;
+}
+
+.filter-and-sorting-bar a {
+	opacity: 0.3
+}
+
+.filter-and-sorting-bar a.chosen {
+	opacity: 1;
+}
+	
+.filter-price p {
+	font-family: Gilroy;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.1em;
+}
+	
 .filter-and-items {
 	display: flex;
 	width: 1300px;
@@ -1076,7 +1251,6 @@ ul.curiers{
 	letter-spacing: 0.05em;
 }
 
-
 .item-price-description {
 	display: flex;
 	align-items: flex-start;
@@ -1097,6 +1271,71 @@ ul.curiers{
 	line-height: 18px;
 	letter-spacing: 0.05em;
 }
+
+.catalog-pages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	margin-bottom: 78px;
+	background: var(--basic-grey-half-light);
+	text-transform: uppercase;
+}
+
+.catalog-pages a{
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+}
+
+.catalog-pages ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-pages li {
+	display: inline;
+}
+
+.catalog-pages li a {
+	color: var(--special-black-opacitive03);
+}
+
+.catalog-pages li a.chosen {
+	color: var(--basic-black);
+}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 footer {
 	background-color: var(--basic-dark);

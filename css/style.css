@@ -581,12 +581,67 @@ header {
 	letter-spacing: 0.1em;
 }
 
-.warranty-popup {
-	display: block;
+.conditions {
+	position: relative;
+	margin-bottom: 120px;
+	display: flex;
+	outline: 5px solid rgba(0, 0, 255, 0.2);
+	outline-offset: -5px;
+	z-index: 0;
 }
 
-.credit-popup {
-	display: block;
+.conditions:before {
+	content: "";
+	position: absolute;
+	width: 1440px;
+	height: 288px;
+	left: -140px;
+	top: 115px;
+	background: var(--basic-grey-light);
+	z-index: -1;
+}
+
+.conditions ul {
+	width: 277px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-top: 104px;
+	padding-left: 0px;
+	outline: 5px solid rgba(0, 0, 255, 0.2);
+	outline-offset: -5px;
+}
+
+.conditions li  {
+	margin-bottom: 30px;
+	margin-left: 0px;
+	padding: 0;
+}
+
+.conditions-slide {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	margin-left: 116px;
+	outline: 5px solid rgba(0, 255, 0, 0.2);
+	outline-offset: -5px;
+}
+
+.conditions-slide img {
+	margin-top: 48px;
+}
+
+.credit-slide img {
+	margin-top: 28px;
+	outline: 5px solid rgba(0, 255, 0, 0.2);
+	outline-offset: -5px;
+}
+	
+.delivery-slide {
+	display: none;
+}
+
+.warranty-slide {
+	display: none;
 }
 
 .write-us {

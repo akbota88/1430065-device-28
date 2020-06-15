@@ -383,12 +383,27 @@ header {
 	width: 560px;
 }
 
+.slide-number {
+	display: block;
+	height: 170px;
+	font-size: 179px;
+	line-height: 219px;
+	color: var(--basic-white);
+	vertical-align: text-bottom;
+	text-align: end;
+	background: lightgrey;
+	margin-right: 47px;
+	margin-left: auto;
+}
+
 .slider h2{
 	margin-top: -60px;
 	margin-bottom: 30px;
 }	
 
 .slide-details {
+	margin-left: 45px;
+	margin-bottom: 60px;
 	display: block;
 	position: relative;
 	text-transform: uppercase;
@@ -423,27 +438,28 @@ header {
 	letter-spacing: 0.1em;
 }
 
-.slide-number {
-	display: block;
-	height: 170px;
-	font-size: 179px;
-	line-height: 219px;
-	color: var(--basic-white);
-	vertical-align: text-bottom;
-	text-align: end;
-	background: lightgrey;
-	margin-right: 47px;
-	margin-left: auto;
-}
-/*	
-.slider-2 {
-	display: block;
+.slide-item-description {
+	display: flex;
 }
 
-.slider-3 {
-	display: block;
+.slide-item-description p{
+	margin-bottom: 15px;
 }
-*/
+
+.slide-item-description .parameter {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.slide-item-description div{
+	margin-right: 65px;
+}
+
+
+
+.slider-description p{
+	margin-bottom: 60px;
+}
 
 .catalog-icon {
 	width: 160px;

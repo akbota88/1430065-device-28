@@ -591,10 +591,9 @@ header {
 
 .conditions {
 	position: relative;
+	margin-top: 50px;
 	margin-bottom: 120px;
 	display: flex;
-	outline: 5px solid rgba(0, 0, 255, 0.2);
-	outline-offset: -5px;
 	z-index: 0;
 }
 
@@ -625,8 +624,6 @@ header {
 	margin-bottom: 0;
 	margin-top: 104px;
 	padding-left: 0px;
-	outline: 5px solid rgba(0, 0, 255, 0.2);
-	outline-offset: -5px;
 }
 
 .conditions li  {
@@ -657,6 +654,20 @@ header {
 .warranty-slide {
 	display: none;
 }
+.partner-logos {
+	margin-top: 210px;
+	margin-bottom: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
 
 .write-us {
 	margin-left: 40px;

@@ -385,16 +385,49 @@ header {
 }
 
 .slider-section {
-
+	position: relative;
 }
 
 .slider {
 	position: relative;
-	display: flex;
 	min-height: 506px;
 	margin-top: -146px;
 	background: transparent;
 	z-index: 1;
+}
+
+.slider-toggle-up1,
+.slider-toggle-up2,
+.slider-toggle-up3 {
+	position: absolute;
+	top: 150px;
+	z-index: 2;
+}
+
+.slider-toggle-up2 {
+	left: 20px;
+}
+
+.slider-toggle-up3 {
+	left: 40px;
+}
+
+.slider-1, 
+.slider-2, 
+.slider-3 {
+	display: none;
+}
+
+.slider-toggle-up1:checked ~ .slider-1 {
+	display: flex;
+}
+
+.slider-toggle-up2:checked ~ .slider-2 {
+	display: flex;
+}
+
+.slider-toggle-up3:checked ~ .slider-3 {
+	display: flex;
 }
 
 .slider-picture {
@@ -494,10 +527,6 @@ header {
 
 .slider-description p{
 	margin-bottom: 60px;
-}
-
-.slider-3, .slider-2 {
-	display: none;
 }
 
 .catalog-options-index {

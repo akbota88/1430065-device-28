@@ -43,9 +43,12 @@
 	<main>
 		<h1 class="visually-hidden">Магазин "Дивайс"</h1>
 		<section class="slider-section">		
-			<input type="radio" name="slider-up" value="no" class="slider-toggle-up1" checked>
-			<input type="radio" name="slider-up" value="no" class="slider-toggle-up2">
-			<input type="radio" name="slider-up" value="no" class="slider-toggle-up3">
+			<input type="radio" name="slider-up" value="no" class="slider-toggle-up1 visually-hidden" id="slider-toggle-up1" checked>
+				<label for="slider-toggle-up1"></label>
+			<input type="radio" name="slider-up" value="no" class="slider-toggle-up2  visually-hidden" id="slider-toggle-up2">
+				<label for="slider-toggle-up2"></label>
+			<input type="radio" name="slider-up" value="no" class="slider-toggle-up3  visually-hidden" id="slider-toggle-up3">
+				<label for="slider-toggle-up3"></label>
 			<div class="slider slider-1">
 				<div class="slider-picture">
 					<a href="blank.html"><img src="img/slider-11.png" width="384" height="486" alt="Фото. Самая длинная палка селфи"></a>
@@ -149,14 +152,14 @@
 		</a>
 	</div>
 	<section class="conditions">
-		<ul>
-			<li><a href="blank.html">ДОСТАВКА</a></li>
-			<li><a href="blank.html">ГАРАНТИЯ</a></li>
-			<li><a href="blank.html">КРЕДИТ</a></li>
-		</ul>
-		<input type="radio" name="slider-conditions" value="no" class="slider-toggle-delivery" checked>
-		<input type="radio" name="slider-conditions" value="no" class="slider-toggle-warranty">
-		<input type="radio" name="slider-conditions" value="no" class="slider-toggle-credit">
+		<div class="conditions-blank"></div>			
+		<input type="radio" name="slider-conditions" value="no" class="slider-toggle-delivery visually-hidden" id="delivery" checked>
+			<label for="delivery" class="label-delivery">Доставка</label>
+		<input type="radio" name="slider-conditions" value="no" class="slider-toggle-warranty visually-hidden" id="warranty">
+			<label for="warranty" class="label-warranty">Гарантия</label>
+		<input type="radio" name="slider-conditions" value="no" class="slider-toggle-credit visually-hidden" id="credit">
+			<label for="credit" class="label-credit">Кредит</label>
+		
 		<div class="delivery-slide conditions-slide">
 			<div>
 				<h3>Доставка</h3>
@@ -173,7 +176,6 @@
 			</div>	
 				<img src="img/warranty.svg" width="170" height="188" alt="Гарантия">
 		</div>
-
 		<div class="credit-slide conditions-slide">
 			<div>
 				<h3>Кредит</h3>
@@ -184,10 +186,10 @@
 		</div>
 	</section>
 	<div class="partner-logos">
-		<a href="blank.html"><img src="img/logo-1.png" width="260" height="100" alt="Лого DJI"></a>
-		<a href="blank.html"><img src="img/logo-2.png" width="260" height="100" alt="Лого SP-GADGETS"></a>
-		<a href="blank.html"><img src="img/logo-3.png" width="260" height="100" alt="Лого GoPro"></a>
-		<a href="blank.html"><img src="img/logo-4.png" width="260" height="100" alt="Лого VIVE"></a>
+		<a href="blank.html"><img src="img/logo-1-color.png" width="260" height="100" alt="Лого DJI"></a>
+		<a href="blank.html"><img src="img/logo-2-color.png" width="260" height="100" alt="Лого SP-GADGETS"></a>
+		<a href="blank.html"><img src="img/logo-3-color.png" width="260" height="100" alt="Лого GoPro"></a>
+		<a href="blank.html"><img src="img/logo-4-color.png" width="260" height="100" alt="Лого VIVE"></a>
 	</div>
     <div class="about-us-and-contacts">	
 		<section class="about-us">

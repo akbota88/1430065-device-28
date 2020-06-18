@@ -69,17 +69,39 @@
 		</div>
 		<div class="filter-and-items">	
 			<div class="filters-all">
-				<div class="filter-price">
-					<p>Стоимость</p>
-					<img src="img/filter.png" width="200" height="44" alt="Фильтр стоимости">
-				</div>
 				<form action="https://echo.htmlacademy.ru" method="get">
+				
+					<div class="rectangle-200x2-price"></div>
+					<fieldset class="filter-price">
+						<legend class="filter-section">Стоимость</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min" tabindex="0"></div>
+								<div class="toggle toggle-max" tabindex="0"></div>				
+							</div>
+							<div class="price-controls">
+								<label class="min-price">
+									от <input type="number" name="min-price" value="0" step="100">
+								</label>
+								<label class="max-price">
+									до <input type="number" name="max-price" value="5000" step="100">
+								</label>
+							
+							</div>
+						
+						<div>
+					</fieldset>
+							
+					<div class="rectangle-200x2"></div>
 					<fieldset>
 						<legend class="filter-section">Цвет</legend>
 						<ul class="filter-option">
 						<li>
-							<input type="checkbox" name="black" class="filter-color-checkbox visually-hidden" id="filter-color-black" checked>
-							<label for="filter-color-black">Чёрный</label>
+							<input type="checkbox" name="black" class="filter-color-checkbox visually-hidden" id="filter-color-black" tabindex="0" checked>
+							<label for="filter-color-black" tabindex="0">Чёрный</label>
 						</li>
 						<li>
 							<input type="checkbox" name="white" class="filter-color-checkbox visually-hidden" id="filter-color-white">
@@ -99,6 +121,7 @@
 						</li>		
 						</ul>
 					</fieldset>
+					<div class="rectangle-200x2"></div>
 					<fieldset>
 						<legend class="filter-section">Bluetooth</legend>	
 						<ul  class="filter-option">

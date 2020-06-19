@@ -806,7 +806,9 @@ content: "";
 	z-index: -1;
 }
 
-.label-delivery::before {
+.label-delivery::before,
+.label-warranty::before,
+.label-credit::before  {
 	left: -20px;
 }
 
@@ -1280,31 +1282,55 @@ ul.curiers{
 	display: none;
 }
 
-.filter-sorting-bar {
-	width: 1300px;
-	margin-left: -140px;
-	padding-right: 140px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filter-parameters {
+	display: block;
+	width: 328px;
+	background: var(--special-grey-half-light);
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0px;
+	padding-left: calc((100% - 1160px) / 2);
+}
+
+.filter-parameters p {
+	padding-left: 60px;
+}
+
+.sorting-parameters {
 	display: flex;
+	width: 832px;
+	padding-right: calc((100% - 1160px) / 2);
+}
+
+.filter-sorting-bar {
+	display: flex;
+	width: 100%;
 	align-items: stretch;
 	background: var(--basic-grey-light);
 }
 
-.filter-sorting-bar p:first-child {
-	width: 268px;
-	background: var(--special-grey-half-light);
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 200px;
-	padding-top: 15px;
-}
-
-.filter-sorting-bar p:nth-child(2) {	
+.sorting-header {	
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 72px;
 	margin-right: 74px;
 	padding-top: 15px;
+	
 }
 
 .filter-sorting-bar p{

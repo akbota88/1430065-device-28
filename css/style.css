@@ -772,14 +772,17 @@ content: "";
 
 .label-delivery {
 	top: 104px;
+	left:20px;
 }
 
 .label-warranty {
 	top: 156px;
+	left:25px;
 }
 
 .label-credit {
 	top: 208px;
+	left:37px;
 }
 
 .slider-toggle-delivery,
@@ -801,6 +804,18 @@ content: "";
 	top: 7px;
 	background: var(--special-yellow-dark);
 	z-index: -1;
+}
+
+.label-delivery::before {
+	left: -20px;
+}
+
+.label-warranty::before  {
+	left: -25px;
+}
+
+.label-credit::before  {
+	left: -37px;
 }
 
 .label-delivery:hover::before,
@@ -839,8 +854,7 @@ content: "";
 
 .slider-toggle-warranty::before {
 	top: 163px;
-}
-	
+}	
 
 .slider-toggle-warranty {
 	left: 20px;
@@ -1293,34 +1307,6 @@ ul.curiers{
 	padding-top: 15px;
 }
 
-.filter-arrow-up {
-	margin-top: 12px;
-	margin-left: auto;
-	opacity: 0.2;
-}
-
-.filter-arrow-up:hover {
-	opacity: 0.4;
-}
-
-.filter-arrow-up:active {
-	opacity: 1;
-}
-
-.filter-arrow-down {
-	margin-top: 12px;
-	margin-left: 16px;
-	opacity: 0.2;
-}
-
-.filter-arrow-down:hover {
-	opacity: 0.4;
-}
-
-.filter-arrow-down:active {
-	opacity: 1;
-}
-
 .filter-sorting-bar p{
 	font-family: Gilroy;
 	font-size: 16px;
@@ -1354,6 +1340,35 @@ ul.curiers{
 .filter-sorting-bar a:active {
 	opacity: 1;
 }
+
+.filter-sorting-bar .filter-arrow-up {
+	margin-top: 12px;
+	margin-left: auto;
+	opacity: 0.2;
+}
+
+.filter-sorting-bar .filter-arrow-up:hover {
+	opacity: 0.4;
+}
+
+.filter-sorting-bar .filter-arrow-up:active {
+	opacity: 1;
+}
+
+.filter-sorting-bar .filter-arrow-down {
+	margin-top: 12px;
+	margin-left: 16px;
+	opacity: 1;
+}
+
+.filter-sorting-bar .filter-arrow-down:hover {
+	opacity: 0.4;
+}
+
+.filter-sorting-bar .filter-arrow-down:active {
+	opacity: 1;
+}
+
 
 .filter-and-items {
 	display: flex;

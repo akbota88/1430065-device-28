@@ -61,6 +61,7 @@ img {
 }
 
 .index-logo-header {
+	display: block;
 	margin-top: -20px;
 	margin-left: 60px;
 }
@@ -106,7 +107,7 @@ header {
 	background-color: var(--special-yellow);
 	width: 1160px;
 	min-height:185px;
-	margin-top: 40px;
+	margin-top: 39px;
 	margin-left: auto;
 	margin-right: auto;
 	border-top: 1px solid var(--basic-white);
@@ -127,11 +128,12 @@ header {
 	flex-wrap: wrap;
 	margin-left: 60px;
 	margin-right: 60px;
+	margin-top: 15px;
 	align-items: center;	
 }
 
 .search-form {
-	margin-right: 145px;
+	margin-right: 144px;
 }
 
 .search-input {
@@ -145,7 +147,7 @@ header {
 	background-color: var(--special-yellow);
 	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 17px;
+	background-position: 1px 17px;
 	border: 0;
 }
 
@@ -209,11 +211,12 @@ header {
 }	
 
 .enter-header {
-	padding-left: 20px;
+	padding-left: 22px;
+	padding-bottom: 2px;
 	margin-right: auto;
 	background-image: url(../img/user-header.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 5px;	
+	background-position: -0px 6px;	
 }
 
 .enter-header:hover {

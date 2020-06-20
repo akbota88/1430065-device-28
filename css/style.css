@@ -1648,6 +1648,10 @@ legend{
 	opacity: 0.25;
 }
 
+.show-button-wrapper {
+	margin-top: 50px;
+}
+
 .show-button {
 	position: relative;
 	font-family: Gilroy;
@@ -1656,7 +1660,7 @@ legend{
 	line-height: 22px;
 	padding: 0;
 	margin-left: 37px;
-	margin-top: 50px;
+	margin-top: 0px;
 	background-color: var(--basic-grey-light);
 	border: 0;
 	letter-spacing: 0.2em;

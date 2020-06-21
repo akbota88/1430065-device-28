@@ -2028,8 +2028,6 @@ footer {
 	margin-top: 33px;
 	display: flex;
 	align-items: center;
-	outline: 1px solid red;
-outline-offset: -1px;
 }
 
 .address{
@@ -2044,8 +2042,6 @@ outline-offset: -1px;
 
 .delivery-footer {
 	margin-left: auto;
-	outline: 1px solid red;
-outline-offset: -1px;
 }
 
 .delivery-footer:hover {
@@ -2060,8 +2056,6 @@ outline-offset: -1px;
 	margin-right: 33px;
 	margin-left: 32px;
 	margin-bottom: 0px;
-	outline: 1px solid red;
-outline-offset: -1px;
 }
 
 .warranty-footer:hover {

@@ -810,12 +810,17 @@ content: "";
 	line-height: 28px;
 }
 
+.credit-slide p {
+	line-height: 28px;
+}
+
 .warranty-slide img {
 	margin-right: -16px;
 }
 
 .credit-slide img {
-	margin-top: 28px;
+	margin-top: 24px;
+	margin-right: 8px;
 }
 
 .label-delivery,
@@ -907,6 +912,10 @@ content: "";
 
 .slider-toggle-warranty:checked + .label-warranty::before  {	
 	left: -24px;
+}
+
+.slider-toggle-credit:checked + .label-credit::before  {	
+	left: -38px;
 }
 
 .slider-toggle-delivery:checked + .label-delivery,

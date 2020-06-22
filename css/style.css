@@ -1528,23 +1528,27 @@ outline-offset: -1px;
 }
 
 .filter-price{
-	margin-bottom: 40px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	outline: 1px solid red;
+outline-offset: -1px;
 }
 
 .rectangle-200x2-price {
 	margin-top: 70px;
-	margin-bottom: 14px;
+	margin-bottom: 15px;
 	width: 200px;
 	height: 2px;
 	background: var(--basic-black);
 }
 
 .rectangle-200x2 {
-	margin-top: 39px;
+	margin-top: 36px;
 	margin-bottom: 14px;
 	width: 200px;
 	height: 2px;
 	background: var(--basic-black);
+
 }
 
 .filter-option {
@@ -1575,7 +1579,7 @@ legend{
 }
 
 .price-controls input {
-	width: 75px;
+	width: 71px;
 	border: none;
 	background-color: var(--basic-grey-light);
 	outline: none;
@@ -1584,8 +1588,8 @@ legend{
 .range-controls {
 	position: relative;
 	width: 200px;
-	margin-top: 39px;
-	margin-bottom: 17px;
+	margin-top: 38px;
+	margin-bottom: 13px;
 }
 
 .range-controls .scale {
@@ -1598,6 +1602,7 @@ legend{
 	width: 60%;
 	height: 2px;
 	background-color: var(--special-green);
+	opacity: 1;
 }
 
 .range-controls .toggle {
@@ -1618,11 +1623,30 @@ legend{
 }
 
 .range-controls .toggle-max {
-	left: 120px;
+	left: 114px;
+}
+
+.filter-option {
+	margin-top: 32px;
+	outline: 1px solid red;
+outline-offset: -1px;
 }
 
 .filter-option li {
 	position: relative;
+	margin-bottom: 20px;
+	margin-left: 2px;
+}
+
+.filter-option li:last-child {
+	margin-bottom: 0px;
+}
+
+.rectangle-200x2-bluetooth {
+	width: 200px;
+	height: 2px;
+	background-color: var(--basic-black);
+	margin-top: 26px;
 	margin-bottom: 15px;
 }
 
@@ -1634,9 +1658,9 @@ legend{
 .filter-color-checkbox + label::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
-	top: -3px;
+	width: 20px;
+	height: 20px;
+	top: -2px;
 	left: -42px;
 	border: 2px solid var(--basic-black);
 }
@@ -1644,9 +1668,9 @@ legend{
 .filter-color-checkbox + label:hover::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
-	top: -3px;
+	width: 20px;
+	height: 20px;
+	top: -2px;
 	left: -42px;
 	border: 2px solid var(--basic-black);
 	opacity: 0.6;
@@ -1655,9 +1679,9 @@ legend{
 .filter-color-checkbox:disabled + label::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
-	top: -3px;
+	width: 20px;
+	height: 20px;
+	top: -2px;
 	left: -42px;
 	border: 2px solid var(--basic-black);
 	opacity: 0.25;
@@ -1666,23 +1690,23 @@ legend{
 .filter-color-checkbox:checked + label::after {
 	content: url(../img/checkbox-flag.svg);
 	position: absolute;
-	top: -0px;
-	left: -36px;
+	top: 1px;
+	left: -37px;
 }
 
 .filter-color-checkbox:checked + label:hover::after {
 	content: url(../img/checkbox-flag.svg);
 	position: absolute;
-	top: -0px;
-	left: -36px;
+	top: 1px;
+	left: -37px;
 	opacity: 0.6;
 }
 
 .filter-color-checkbox:checked.filter-color-checkbox:disabled + label::after {
 	content: url(../img/checkbox-flag.svg);
 	position: absolute;
-	top: -0px;
-	left: -36px;
+	top: 1px;
+	left: -37px;
 	opacity: 0.6;
 }
 

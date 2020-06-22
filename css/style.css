@@ -1403,9 +1403,6 @@ ul.curiers{
 	margin-bottom: 0;
 	padding-top: 9px;
 	padding-left: calc((100% - 1160px) / 2);
-outline: 1px solid red;
-outline-offset: -1px;
-
 }
 
 .filter-parameters p {
@@ -1517,7 +1514,7 @@ outline-offset: -1px;
 	padding-right: calc((100% - 1160px)/2);
 	display: grid;
 	column-gap: 40px;
-	row-gap: 40px;
+	row-gap: 48px;
 	margin-left: 72px; 
 	margin-top: 70px;
 	grid-template-columns: 360px 360px;
@@ -1530,8 +1527,6 @@ outline-offset: -1px;
 .filter-price{
 	margin-bottom: 0px;
 	margin-left: 0px;
-	outline: 1px solid red;
-outline-offset: -1px;
 }
 
 .rectangle-200x2-price {
@@ -1592,17 +1587,17 @@ legend{
 	margin-bottom: 13px;
 }
 
-.range-controls .scale {
-	height: 2px;
-	background-color: var(--basic-black);
-	opacity: 0.2;
-}
-
 .range-controls .bar {
 	width: 60%;
 	height: 2px;
 	background-color: var(--special-green);
 	opacity: 1;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background-color: var(--basic-black);
+	opacity: 0.2;
 }
 
 .range-controls .toggle {
@@ -1628,8 +1623,6 @@ legend{
 
 .filter-option {
 	margin-top: 32px;
-	outline: 1px solid red;
-outline-offset: -1px;
 }
 
 .filter-option li {
@@ -1713,8 +1706,8 @@ outline-offset: -1px;
 .filter-bluetooth-radio + label::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
+	width: 20px;
+	height: 20px;
 	top: -3px;
 	left: -42px;
 	border: 2px solid var(--basic-black);
@@ -1724,8 +1717,8 @@ outline-offset: -1px;
 .filter-bluetooth-radio + label:hover::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
+	width: 20px;
+	height: 20px;
 	top: -3px;
 	left: -42px;
 	border: 2px solid var(--basic-black);
@@ -1736,8 +1729,8 @@ outline-offset: -1px;
 .filter-bluetooth-radio:disabled + label::before {
 	content: "";
 	position: absolute;
-	width: 22px;
-	height: 22px;
+	width: 20px;
+	height: 20px;
 	top: -3px;
 	left: -42px;
 	border: 2px solid var(--basic-black);
@@ -1750,8 +1743,8 @@ outline-offset: -1px;
 	position: absolute;
 	width: 8px;
 	height: 8px;
-	top: 6px;
-	left: -33px;
+	top: 5px;
+	left: -34px;
 	background-color: var(--basic-black);
 	border-radius: 50%;
 }
@@ -1761,8 +1754,8 @@ outline-offset: -1px;
 	position: absolute;
 	width: 8px;
 	height: 8px;
-	top: 6px;
-	left: -33px;
+	top: 5px;
+	left: -34px;
 	background-color: var(--basic-black);
 	border-radius: 50%;
 	opacity: 0.6;
@@ -1773,11 +1766,15 @@ outline-offset: -1px;
 	position: absolute;
 	width: 8px;
 	height: 8px;
-	top: 6px;
-	left: -33px;
+	top: 5px;
+	left: -34px;
 	background-color: var(--basic-black);
 	border-radius: 50%;
 	opacity: 0.25;
+}
+
+.filter-option.bluetooth li{
+	margin-bottom: 21px;
 }
 
 .show-button {
@@ -1788,7 +1785,7 @@ outline-offset: -1px;
 	line-height: 22px;
 	padding: 0;
 	margin-left: 37px;
-	margin-top: 50px;
+	margin-top: 31px;
 	background-color: var(--basic-grey-light);
 	border: 0;
 	letter-spacing: 0.2em;
@@ -1927,7 +1924,8 @@ outline-offset: -1px;
 .item-price-description {
 	display: flex;
 	align-items: flex-start;
-	margin-top: 30px;
+	margin-top: 25px;
+	margin-left: 1px;
 	margin-bottom: 0;
 }
 
@@ -1938,11 +1936,17 @@ outline-offset: -1px;
 }
 
 .price {
+	margin-right: -5px;
 	padding-top: 2px;
+	margin-left: 5px;
 	font-family: Open Sans;
 	font-size: 16px;
 	line-height: 18px;
 	letter-spacing: 0.05em;
+}
+
+.price.professional-selfie {
+	margin-left: 2px;
 }
 
 .catalog-pages {
@@ -1953,6 +1957,7 @@ outline-offset: -1px;
 	justify-content: space-between;
 	align-items: center;
 	height: 70px;
+	margin-top: -8px;
 	margin-bottom: 78px;
 	background: var(--basic-grey-half-light);
 	text-transform: uppercase;
@@ -1972,7 +1977,7 @@ outline-offset: -1px;
 
 .catalog-pages li {
 	display: inline;
-	margin-right: 30px;
+	margin-right: 24px;
 }
 
 .catalog-pages li:last-child {
@@ -1991,9 +1996,17 @@ outline-offset: -1px;
 	color: var(--special-black);
 }
 
-.first-page,
-.last-page {
+.first-page {
 	width: 120px;
+	height: 45px;
+	text-align: center;
+	padding-top: 25px;
+	margin-right: 3px;
+}
+
+.last-page {
+	width: 117px;
+	padding-right: 3px;
 	height: 45px;
 	text-align: center;
 	padding-top: 25px;

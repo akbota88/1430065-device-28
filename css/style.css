@@ -68,7 +68,7 @@ img {
 
 .noindex-logo-header {
 	display: block;
-	margin-top: -18px;
+	margin-top: -20px;
 	margin-left: 60px;
 }
 
@@ -106,7 +106,7 @@ h3 {
 header {
 	background-color: var(--special-yellow);
 	width: 1160px;
-	min-height:185px;
+	min-height:186px;
 	margin-top: 39px;
 	margin-left: auto;
 	margin-right: auto;
@@ -129,6 +129,19 @@ header {
 	margin-left: 60px;
 	margin-right: 60px;
 	margin-top: 15px;
+	align-items: center;	
+}
+
+.menu-1-header-noindex {
+	font-family: Open Sans;
+	font-size: 15px;
+	line-height: 20px;
+	min-height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 10px;
 	align-items: center;	
 }
 
@@ -228,7 +241,7 @@ header {
 }
 
 .exit-header {
-	padding-right: 30px;
+	padding-right: 42px;
 	opacity:0.3;
 }
 
@@ -1337,6 +1350,7 @@ ul.curiers{
 	line-height: 19px;
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 	flex-wrap: wrap;
 	list-style-type: none;
 }
@@ -1359,11 +1373,18 @@ ul.curiers{
 	color: var(--special-black-opacitive01);
 }
 
-.catalog-paths li::after {
+.catalog-paths li:first-child::after {
 	content: url(../img/nav-arrow.svg);
 	position: absolute;
-	right: -22px;
-	top: -1px;
+	right: -21px;
+	top: 0px;
+}
+
+.catalog-paths li:nth-child(2)::after {
+	content: url(../img/nav-arrow.svg);
+	position: absolute;
+	right: -25px;
+	top: 0px;
 }
 
 .catalog-paths li:last-child {
@@ -1380,8 +1401,11 @@ ul.curiers{
 	background: var(--special-grey-half-light);
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 0px;
+	padding-top: 9px;
 	padding-left: calc((100% - 1160px) / 2);
+outline: 1px solid red;
+outline-offset: -1px;
+
 }
 
 .filter-parameters p {
@@ -1391,10 +1415,12 @@ ul.curiers{
 .sorting-parameters {
 	display: flex;
 	width: 832px;
+	padding-top: 10px;
 	padding-right: calc((100% - 1160px) / 2);
 }
 
 .filter-sorting-bar {
+	height: 70px;
 	display: flex;
 	width: 100%;
 	align-items: stretch;
@@ -1406,7 +1432,7 @@ ul.curiers{
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 72px;
-	margin-right: 74px;
+	margin-right: 72px;
 	padding-top: 15px;
 	
 }
@@ -1425,11 +1451,12 @@ ul.curiers{
 	line-height: 19px;
 	list-style-type: none;
 	padding-left: 0;
+	padding-top: 1px;
 }
 
 .filter-sorting-bar li{
 	display: inline;
-	margin-right: 30px;
+	margin-right: 29px;
 	padding-left: 0;
 }
 
@@ -1446,8 +1473,8 @@ ul.curiers{
 }
 
 .filter-sorting-bar .filter-arrow-up {
-	margin-top: 12px;
-	margin-left: auto;
+	margin-top: 13px;
+	margin-left: 197px;
 	opacity: 0.2;
 }
 
@@ -1460,8 +1487,8 @@ ul.curiers{
 }
 
 .filter-sorting-bar .filter-arrow-down {
-	margin-top: 12px;
-	margin-left: 16px;
+	margin-top: 13px;
+	margin-left: 23px;
 	opacity: 1;
 }
 

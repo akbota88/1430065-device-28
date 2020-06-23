@@ -229,11 +229,11 @@ header {
 	margin-right: auto;
 	background-image: url(../img/user-header.svg);
 	background-repeat: no-repeat;
-	background-position: -0px 6px;	
+	background-position: 0px 6px;	
 }
 
 .enter-header.noindex {
-	background-position: 1px 6px;	
+	background-position: 0px 6px;	
 }
 
 .enter-header:hover {
@@ -277,7 +277,7 @@ header {
 }
 
 .cart-header.noindex {	
-	padding-left: 21px;
+	padding-left: 22px;
 }
 
 .cart-header:hover {
@@ -1042,17 +1042,18 @@ content: "";
 
 .big-map {
 	position: absolute;
-	top: 30px;
+	top: 36px;
 	left: -516px;
 	z-index: 1;
+	display: none;
 }
 
 .button-close-big-map {
 	position: absolute;
 	width: 55px;
 	height: 55px;
-	margin-top: 0;
-	margin-right: 0;
+	margin-top: -12px;;
+	margin-right: -12px;
 	top: 42px;
 	right: 48px;
 	padding: 0;
@@ -1127,11 +1128,11 @@ content: "";
 
 .feedback {
 	position: absolute;
-	display: block;
+	display: none;
 	width: 960px;
 	min-height: 550px;
-	top: -625px;
-	left: 100px;
+	top: -640px;
+	left: 86px;
 	background-color: var(--basic-white);
 	box-shadow: 0px 10px 16px var(--special-black-opacitive015);
 }
@@ -1160,7 +1161,7 @@ content: "";
 }
 
 .feedback-fields {
-	margin-top: 17px;
+	margin-top: 11px;
 	margin-left: 100px;
 	margin-right: 100px;
 	display: flex;
@@ -1175,8 +1176,8 @@ content: "";
 }
 
 .appointment-item input {
-	width: 340px;
-	height: 50px;
+	width: 338px;
+	height: 48px;
 	padding-left: 20px;
 	font-family: Open Sans;
 	font-size: 14px;
@@ -1222,12 +1223,16 @@ content: "";
 	font-weight: 800;	
 	display: block;
 	margin-top: 0px;
+	margin-bottom: 11px;
+}
+
+.appointment-item label.label-text {
 	margin-bottom: 10px;
 }
 
 .appointment-item textarea {
-	width: 736px;
-	height: 148px;
+	width: 734px;
+	height: 146px;
 	padding-left: 20px;
 	padding-top: 15px;
 	font-family: Open Sans;
@@ -1266,9 +1271,9 @@ content: "";
 	position: relative;
 	width: 200px;
 	height: 22px;
-	margin-top: 22px;
+	margin-top: 13px;
 	margin-left: 100px;
-	margin-bottom: 76px;
+	margin-bottom: 70px;
 	font-family: Gilroy;
 	font-size: 18px;
 	line-height: 22px;
@@ -2166,10 +2171,10 @@ footer {
 
 .cart-footer {
 	margin-left: 41px; 
-	padding-left: 22px;
+	padding-left: 23px;
 	background-image: url(../img/cart-footer.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 5px;	
+	background-position: -0px 5px;	
 	opacity: 0.7;
 }
 
@@ -2183,7 +2188,7 @@ footer {
 
 .cart-footer-noindex {
 	margin-left: 41px; 
-	padding-left: 22px;
+	padding-left: 23px;
 	background-image: url(../img/cart-footer.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;	

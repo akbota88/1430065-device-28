@@ -232,6 +232,10 @@ header {
 	background-position: -0px 6px;	
 }
 
+.enter-header.noindex {
+	background-position: 1px 6px;	
+}
+
 .enter-header:hover {
 	opacity: 0.6;	
 }
@@ -270,6 +274,10 @@ header {
 	background-image: url(../img/cart-header.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;	
+}
+
+.cart-header.noindex {	
+	padding-left: 21px;
 }
 
 .cart-header:hover {
@@ -2042,7 +2050,8 @@ footer {
 }
 
 .noindex-logo-footer {
-	margin-top: 2px;
+	display: block;
+	margin-top: -2px;
 	margin-left: 140px;
 }
 
@@ -2069,30 +2078,30 @@ footer {
 	color: white;	
 }
 
-.enter-footer {
+.enter-footer-noindex {
 	margin-left: auto;
-	padding-left: 24px;
+	padding-left: 26px;
 	background-image: url(../img/user-footer.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 4px;
     opacity: 0.7;	
 }
 
-.enter-footer:hover {
+.enter-footer-noindex:hover {
 	opacity: 1;	
 }
 
-.enter-footer:active {
+.enter-footer-noindex:active {
 	opacity: 0.3;	
 }
 
 .exit-footer {
-	margin-left: 24px;
+	margin-left: 23px;
 	opacity:0.3;
 }
 
-.compare-footer {
-	margin-left: 41px;
+.compare-footer-noindex {
+	margin-left: 40px;
 	padding-left: 26px;
 	background-image: url(../img/compare-footer.svg);
 	background-repeat: no-repeat;
@@ -2100,28 +2109,28 @@ footer {
     opacity: 0.7;	
 }
 
-.compare-footer:hover {
+.compare-footer-noindex:hover {
 	opacity: 1;	
 }
 
-.compare-footer:active {
+.compare-footer-noindex:active {
 	opacity: 0.3;	
 }
 
-.cart-footer {
+.cart-footer-noindex {
 	margin-left: 41px; 
-	padding-left: 23px;
+	padding-left: 22px;
 	background-image: url(../img/cart-footer.svg);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;	
 	opacity: 0.7;
 }
 
-.cart-footer:hover {
+.cart-footer-noindex:hover {
 	opacity: 1;	
 }
 
-.cart-footer:active {
+.cart-footer-noindex:active {
 	opacity: 0.3;	
 }
 
